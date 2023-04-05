@@ -1,0 +1,24 @@
+Model: "model_1"
+__________________________________________________________________________________________________
+ Layer (type)                   Output Shape         Param #     Connected to                     
+==================================================================================================
+ input_2 (InputLayer)           [(None, 100, 1)]     0           []                               
+                                                                                                  
+ input_3 (InputLayer)           [(None, 100, 1)]     0           []                               
+                                                                                                  
+ model (Functional)             (None, 10)           22542       ['input_2[0][0]',                
+                                                                  'input_3[0][0]']                
+                                                                                                  
+ lambda (Lambda)                (None, 1)            0           ['model[0][0]',                  
+                                                                  'model[1][0]']                  
+                                                                                                  
+ batch_normalization_2 (BatchNo  (None, 1)           4           ['lambda[0][0]']                 
+ rmalization)                                                                                     
+                                                                                                  
+ dense_1 (Dense)                (None, 1)            2           ['batch_normalization_2[0][0]']  
+                                                                                                  
+==================================================================================================
+Total params: 22,548
+Trainable params: 19,344
+Non-trainable params: 3,204
+__________________________________________________________________________________________________
