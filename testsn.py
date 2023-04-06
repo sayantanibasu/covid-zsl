@@ -13,7 +13,7 @@ ssl._create_default_https_context = ssl._create_unverified_context
 # In[12]:
 
 
-Entrez.email="basu9@illinois.edu"
+Entrez.email="XXXXXX"
 
 
 # In[13]:
